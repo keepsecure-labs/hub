@@ -31,6 +31,25 @@ sources:
     url: "https://app.datadoghq.com/security/feed"
   - title: "Datadog Cloud SIEM Google Workspace OAuth detection rules"
     url: "https://docs.datadoghq.com/security/default_rules/def-000-043"
+diamond:
+  adversary:
+    operator_model: operator-run
+    monetization: access-sale
+    confidence: unknown
+  infrastructure:
+    registry_layer: "Third-party AI tool OAuth app with Google Workspace read scope"
+    c2_primary: "Google Workspace OAuth grant (legitimate channel abused)"
+    c2_fallback: null
+    exfil_channel: "Vercel internal API access via hijacked OAuth token chain"
+    c2_resilience_tier: 1
+  capability:
+    initial_access: oauth-app-abuse
+    execution: credential-access-via-oauth
+    evasion: legitimate-oauth-flow
+    persistence: persistent-oauth-grant
+  victim:
+    direct: "Vercel (internal access via Google Workspace OAuth chain)"
+    blast_radius: "Developers with third-party AI tools connected to Google Workspace with broad OAuth scopes"
 ---
 
 <p>On April 20, 2026, Vercel disclosed the root cause of an internal-systems compromise: a third-party AI tool (Context.ai) used by a Vercel employee was breached, the foothold was used to take over the employee's Vercel-linked Google Workspace account, and from there the attacker reached certain Vercel environments and environment variables. Three hops, each with its own trust boundary, each broken in turn. The pattern is "OAuth app as supply chain" — and it's the cleanest published example so far of how a SaaS company gets compromised through a tool its employees connected to their identity provider, not through any direct vulnerability in its own infrastructure.</p>

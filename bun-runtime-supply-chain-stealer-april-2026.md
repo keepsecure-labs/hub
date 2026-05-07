@@ -30,6 +30,25 @@ sources:
     url: "https://socket.dev/blog/lightning-pypi-package-compromised"
   - title: "Datadog Security Research: Lightning PyPI compromised by Bun-based credential stealer"
     url: "https://app.datadoghq.com/security/feed"
+diamond:
+  adversary:
+    operator_model: operator-run
+    monetization: credential-collection
+    confidence: inferred
+  infrastructure:
+    registry_layer: "npm @cap-js/* and mbt packages; PyPI lightning package"
+    c2_primary: "GitHub public repos (description: 'A Mini Shai-Hulud has Appeared')"
+    c2_fallback: "GitHub commit dead-drop: OhNoWhatsGoingOnWithGitHub magic string"
+    exfil_channel: "AES-256-GCM encrypted result files in public GitHub repos"
+    c2_resilience_tier: 4
+  capability:
+    initial_access: account-takeover
+    execution: preinstall-hook
+    evasion: bun-runtime-loader
+    persistence: worm-propagation
+  victim:
+    direct: "SAP CAP npm maintainers; Lightning AI (PyPI)"
+    blast_radius: "@cap-js/sqlite 2.2.2, @cap-js/postgres 2.2.2, @cap-js/db-service 2.10.1, mbt 1.2.48; lightning 2.6.2-2.6.3"
 ---
 
 <p>In a 48-hour window between April 29 and April 30, 2026, two unrelated-looking supply-chain compromises landed on different package ecosystems with the same novel runtime evasion: both fetch the <a href="https://github.com/oven-sh/bun">Bun</a> JavaScript runtime from GitHub at install time, and both use it to execute an 11-MB obfuscated credential stealer. The npm compromise is four SAP Cloud Application Programming Model packages first reported by Aikido under the name "Mini Shai-Hulud." The PyPI compromise is the popular <code>lightning</code> package, first reported by Socket. A group calling itself Team PCP claimed responsibility for the PyPI side through a Tor onion site linked from a GitHub issue. The shared TTP — Bun as the second-stage runtime — is the headline. Defenders' static analysis tooling is built for Node.js and Python; Bun is neither.</p>

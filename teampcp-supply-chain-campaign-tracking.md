@@ -43,6 +43,25 @@ sources:
     url: "https://community.bitwarden.com/t/bitwarden-statement-on-checkmarx-supply-chain-incident/96127"
   - title: "Xinference compromise — JFrog"
     url: "https://research.jfrog.com/post/xinference-compromise/"
+diamond:
+  adversary:
+    operator_model: operator-run
+    monetization: credential-collection
+    confidence: inferred
+  infrastructure:
+    registry_layer: "GitHub Actions tag force-update; npm/PyPI/OpenVSX/Docker Hub publish accounts"
+    c2_primary: "checkmarx[.]zone / audit.checkmarx[.]cx"
+    c2_fallback: "championships-peoples-point-cassette.trycloudflare[.]com (Cloudflare Tunnel)"
+    exfil_channel: "ICP canister tdtqy-oyaaa-aaaae-af2dq-cai.raw.icp0[.]io; public GitHub repos tpcp-docs/docs-tpcp"
+    c2_resilience_tier: 3
+  capability:
+    initial_access: ci-cd-injection
+    execution: postinstall-hook
+    evasion: bun-runtime-loader
+    persistence: systemd-user-unit
+  victim:
+    direct: "Aqua Security (Trivy), Checkmarx (KICS + extensions), Bitwarden (CLI), Xinference, litellm"
+    blast_radius: "All CI/CD pipelines using affected GitHub Actions by version tag (not SHA)"
 ---
 
 <p>Since March 20, 2026, a credential-theft operation tracked under the campaign name <strong>Team PCP</strong> has chained through six security-tooling vendors and at least nine published packages across npm, PyPI, Docker Hub, OpenVSX, and the GitHub Actions marketplace. Each compromise feeds the next: stolen CI/CD credentials are used to publish trojanized versions of downstream packages, whose installations in turn yield more credentials. The campaign's distinguishing feature is its <strong>meta-targeting</strong> — the victims are mostly the security industry's own supply-chain scanning tools (Trivy, Checkmarx KICS, Aqua Security's GitHub org, Bitwarden's release pipeline). The operator infrastructure has self-named a worm component "CanisterWorm" and uses Cloudflare Tunnel and Internet Computer Protocol canisters as fallback C2 channels. This piece consolidates the public reporting from Wiz, Socket, StepSecurity, Aikido, Sysdig, JFrog, and Open Source Malware into one campaign timeline and one detection playbook.</p>

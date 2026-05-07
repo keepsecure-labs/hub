@@ -26,6 +26,25 @@ tags:
   - credential theft
   - TeamPCP
 hasArtifacts: false
+diamond:
+  adversary:
+    operator_model: operator-run
+    monetization: credential-collection
+    confidence: inferred
+  infrastructure:
+    registry_layer: "npm OIDC publisher via stolen GitHub Actions tokens from mbt, @cap-js/sqlite"
+    c2_primary: "api.github[.]com (private repo creation under victim account)"
+    c2_fallback: null
+    exfil_channel: "AES-256-GCM encrypted files in private GitHub repos"
+    c2_resilience_tier: 4
+  capability:
+    initial_access: oidc-token-theft
+    execution: preinstall-hook
+    evasion: bun-runtime-loader
+    persistence: worm-propagation
+  victim:
+    direct: "Intercom (intercom-client npm package maintainer)"
+    blast_radius: "~2M weekly downloads, versions 7.0.4 only (April 30 window)"
 sources:
   - title: "Shai-Hulud worm pivots to multi-cloud: intercom-client hijacked — StepSecurity"
     url: "https://www.stepsecurity.io/blog/shai-hulud-worm-pivots-to-multi-cloud-intercom-client-hijacked"

@@ -19,6 +19,30 @@ sources:
     url: "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html"
   - title: "NVD entry for CVE-2026-31431"
     url: "https://nvd.nist.gov/vuln/detail/CVE-2026-31431"
+diamond:
+  adversary:
+    operator_model: commodity
+    monetization: access-sale
+    confidence: inferred
+  infrastructure:
+    registry_layer: null
+    c2_primary: "Carding forum Exploits section (dark-web marketplace)"
+    c2_fallback: null
+    exfil_channel: "Local privilege escalation — no network exfil required"
+    c2_resilience_tier: 1
+  capability:
+    initial_access: local-access-required
+    execution: lpe-exploit
+    evasion: no-race-condition
+    persistence: root-via-page-cache-write
+  victim:
+    direct: "Any unprivileged local user on unpatched Linux since 2017"
+    blast_radius: "All Linux distributions shipping algif_aead since 2017; container environments using host kernel"
+  criminal_market:
+    first_observed: "2026-04-29"
+    forum_section: "Exploits"
+    days_to_crossing: 7
+    benchmark: "CopyFail is the positive control — crossed in 7 days vs Shai-Hulud never crossing"
 ---
 
 <p><a href="https://keepsecure.io/hub/cve-2026-31431-copyfail-linux-page-cache-lpe">CVE-2026-31431</a> — codenamed Copy Fail — was disclosed on April 22, 2026. Eight days later, on April 30, it was an active thread on the Exploits section of a long-running carding forum, posted by an established forum member alongside cracked Cobalt Strike binaries and similar commodity offensive tooling. Seven-to-eight days from researcher disclosure to criminal-forum chatter is fast — and the speed itself is the defensible insight. The criminal market made its judgment about CopyFail before most enterprise patch cycles will have started. It picked correctly. Defenders should take that judgment seriously and prioritize accordingly.</p>
