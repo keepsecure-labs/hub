@@ -1,7 +1,7 @@
 ---
 title: "litellm on PyPI: the first .pth injection in the TeamPCP chain and why the operator named it"
 date: 2026-05-07
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ebf03b6b874b09745aa_blog%202.svg"
+heroImage: "/art/litellm-pypi-teampcp-pth-injection-march-2026.png"
 description: "The litellm PyPI compromise on March 24, 2026 was the first documented use of .pth file injection in the TeamPCP campaign. The operator later named the technique after this compromise in CanisterWorm's own payload string — Layer 1 evidence that litellm is where this class of persistence began in the cluster."
 slug: litellm-pypi-teampcp-pth-injection-march-2026
 type: threat-intel

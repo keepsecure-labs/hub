@@ -1,7 +1,7 @@
 ---
 title: "How a GitHub Actions comment box became a supply-chain attack: elementary-data on PyPI and GHCR"
 date: 2026-04-30
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ebf03b6b874b09745aa_blog%202.svg"
+heroImage: "/art/elementary-data-pypi-ghcr-github-actions-injection-2026.png"
 description: "An attacker injected commands into elementary-data's CI pipeline through a GitHub Actions script-injection flaw, forged a release tag, and delivered a malicious .pth file to both PyPI and GitHub Container Registry."
 slug: elementary-data-pypi-ghcr-github-actions-injection-2026
 type: threat-intel

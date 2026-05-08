@@ -1,7 +1,7 @@
 ---
 title: "Vercel's April 2026 incident: an OAuth-app supply chain in three hops"
 date: 2026-04-30
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451eb41100bf61e2edaeb4_blog%201.svg"
+heroImage: "/art/vercel-oauth-supply-chain-april-2026.png"
 description: "Vercel's April 2026 breach moved from a third-party AI tool to a Workspace account to internal Vercel access. The OAuth-app supply-chain pattern in detail."
 slug: vercel-oauth-supply-chain-april-2026
 type: threat-intel

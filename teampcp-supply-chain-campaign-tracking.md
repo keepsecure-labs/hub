@@ -1,7 +1,7 @@
 ---
 title: "Team PCP: tracking a six-week supply-chain campaign through Trivy, Checkmarx, Bitwarden, and beyond"
 date: 2026-04-30
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ebf03b6b874b09745aa_blog%202.svg"
+heroImage: "/art/teampcp-supply-chain-campaign-tracking.png"
 description: "A self-spreading credential-theft campaign that has chained through six security-tooling vendors since March 2026. Patterns, IOCs, and detection guidance."
 slug: teampcp-supply-chain-campaign-tracking
 type: threat-intel

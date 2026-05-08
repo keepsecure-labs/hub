@@ -1,7 +1,7 @@
 ---
 title: "Shai-Hulud closes the loop: how the worm reached intercom-client in 24 hours"
 date: 2026-05-04
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ed0939d3c19cc367822_blog%204.svg"
+heroImage: "/art/shai-hulud-npm-worm-intercom-client-2026.png"
 description: "The Shai-Hulud worm closed its loop in 24 hours: OIDC tokens from April 29 npm victims published intercom-client@7.0.4 the next day."
 slug: shai-hulud-npm-worm-intercom-client-2026
 type: threat-intel

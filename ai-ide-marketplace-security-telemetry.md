@@ -1,7 +1,7 @@
 ---
 title: "Where AI-IDE threats actually live: telemetry beyond the dark web"
 date: 2026-04-29
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ec9f48304bdea104c6a_blog%203.svg"
+heroImage: "/art/ai-ide-marketplace-security-telemetry.png"
 description: "Dark-web sweeps come up empty for AI-IDE threats — but the threat exists. It's on the legitimate marketplace. Where to look and what to alert on."
 author:
   name: falco365

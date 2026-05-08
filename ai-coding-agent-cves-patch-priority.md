@@ -1,7 +1,7 @@
 ---
 title: "Four AI-coding-agent-stack CVEs you should patch first"
 date: 2026-04-29
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451eb41100bf61e2edaeb4_blog%201.svg"
+heroImage: "/art/ai-coding-agent-cves-patch-priority.png"
 description: "A short cluster of CVEs has hit the runtime stack AI coding agents rely on — npm install, Docker, LangChain, model loaders. Patch order and structural fixes."
 author:
   name: falco365

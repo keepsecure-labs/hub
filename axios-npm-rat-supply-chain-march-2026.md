@@ -1,7 +1,7 @@
 ---
 title: "axios compromised on npm: account takeover drops cross-platform RAT across 25 million weekly downloads"
 date: 2026-03-31
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ec9f48304bdea104c6a_blog%203.svg"
+heroImage: "/art/axios-npm-rat-supply-chain-march-2026.png"
 description: "The axios npm package, used by an estimated 25 million projects, was compromised via maintainer account takeover. Two malicious versions delivered a cross-platform remote access trojan before being pulled."
 slug: axios-npm-rat-supply-chain-march-2026
 type: threat-intel

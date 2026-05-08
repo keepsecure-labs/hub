@@ -1,7 +1,7 @@
 ---
 title: "The AI agent as confused deputy: a 2026 attack class"
 date: 2026-04-29
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ebf03b6b874b09745aa_blog%202.svg"
+heroImage: "/art/ai-agent-confused-deputy-pattern.png"
 description: "Four recent CVEs reveal the AI agent as confused deputy: privileged process, attacker-controlled input. The class named, mapped, and defended."
 author:
   name: falco365

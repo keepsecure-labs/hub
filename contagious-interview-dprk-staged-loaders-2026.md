@@ -1,7 +1,7 @@
 ---
 title: "Contagious Interview goes cross-ecosystem: DPRK staged loaders hit npm, PyPI, Go, Rust, and PHP"
 date: 2026-04-28
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ebf03b6b874b09745aa_blog%202.svg"
+heroImage: "/art/contagious-interview-dprk-staged-loaders-2026.png"
 description: "North Korea's Contagious Interview operation spread a staged loader cluster across five package ecosystems simultaneously. The Windows build of one package includes a full post-compromise toolkit and AnyDesk-based remote access."
 slug: contagious-interview-dprk-staged-loaders-2026
 type: threat-intel

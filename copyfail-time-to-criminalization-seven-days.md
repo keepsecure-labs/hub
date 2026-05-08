@@ -1,7 +1,7 @@
 ---
 title: "CopyFail crossed onto a carding forum in seven days. Here's why that matters."
 date: 2026-04-29
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ec9f48304bdea104c6a_blog%203.svg"
+heroImage: "/art/copyfail-time-to-criminalization-seven-days.png"
 description: "CVE-2026-31431 was disclosed on April 22. By April 30 it was an active thread on a carding forum's Exploits section. The seven-day crossing tells you which Linux LPE class the criminal market actually buys."
 slug: copyfail-time-to-criminalization-seven-days
 author:

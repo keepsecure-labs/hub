@@ -1,7 +1,7 @@
 ---
 title: "The Bun runtime is becoming the malware delivery vehicle of 2026"
 date: 2026-04-30
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ec9f48304bdea104c6a_blog%203.svg"
+heroImage: "/art/bun-runtime-supply-chain-stealer-april-2026.png"
 description: "Two supply-chain compromises in 48 hours both fetch Bun and run an obfuscated credential stealer. Lightning PyPI and four SAP CAP npm packages, both Team PCP."
 slug: bun-runtime-supply-chain-stealer-april-2026
 type: threat-intel

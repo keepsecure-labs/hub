@@ -1,7 +1,7 @@
 ---
 title: "One toolchain, six weeks, four campaigns: mapping the npm supply-chain worm cluster"
 date: 2026-05-07
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ed0939d3c19cc367822_blog%204.svg"
+heroImage: "/art/npm-supply-chain-worm-cluster-2026.png"
 description: "TeamPCP, Mini Shai-Hulud, Shai-Hulud, and CanisterWorm are four names for one connected operation. The shared __decodeScrambled PBKDF2 fingerprint, Bun runtime evasion, and worm propagation architecture trace to a single toolchain that upgraded its C2 resilience twice and its OPSEC once — within a single propagation cycle."
 slug: npm-supply-chain-worm-cluster-2026
 type: threat-intel

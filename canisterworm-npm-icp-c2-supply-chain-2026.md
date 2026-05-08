@@ -1,7 +1,7 @@
 ---
 title: "CanisterWorm: the npm supply chain worm that exfiltrates through a blockchain"
 date: 2026-05-04
-heroImage: "https://assets.website-files.com/614519168cffbd131c32d792/61451ebf03b6b874b09745aa_blog%202.svg"
+heroImage: "/art/canisterworm-npm-icp-c2-supply-chain-2026.png"
 description: "CanisterWorm routes stolen credentials through an Internet Computer blockchain canister — infrastructure no domain seizure or IP block can touch."
 slug: canisterworm-npm-icp-c2-supply-chain-2026
 type: threat-intel
